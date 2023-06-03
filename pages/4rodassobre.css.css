@@ -1,6 +1,11 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-image: url(imagensp/bentleynight.jepg.jpg);
+  background-position: center 5px;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 
@@ -13,7 +18,7 @@ body {
   padding: 20px;
   background-color:  #000000;
   background-image: url(https://i.pinimg.com/originals/6f/7c/63/6f7c63991726d61d63730682e791d78c.gif);
- 
+  
 }
 
 .logo {
@@ -111,7 +116,9 @@ body {
 
 /* Fim configurações cabeçalho */
 
-
+.textosobre{
+  color: white;
+}
 
 /* inicio configurações Barra de pesquisa */
 
@@ -146,17 +153,27 @@ body {
 
 /* inicio configurações Grid */
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+.caixatexto {
+  display: flex;
   margin: 0;
   width: 100%;
+  margin-bottom: 600px;
+
+  
  
  
 }
 
+.textosobre {
+  margin-left: 50px;
+  margin-top: 30px;
+}
 
+.fachada{
+  margin-top: 100px;
+  margin-left: 50px;
+  text-align: center;
+}
 .video {
   grid-column: 1 / 2;
   width: 100%;
