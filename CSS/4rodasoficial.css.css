@@ -315,11 +315,15 @@ body {
 
 .nav1{
   margin-top: 0px;
-  
   position:flex;
   margin-bottom: 20px;
+ opacity: 0.7;
 
 }
+ 
+  
+
+
 
 /* fim marcas*/
 
