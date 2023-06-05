@@ -339,11 +339,19 @@ body {
 
 }
  
+.marcas{
+ display: flex;
+ justify-content: center; 
+ margin-top: 80px;                         /*Edição aba marcas*/
+ border-radius: unset;
+ opacity: 0.9;
+ margin-bottom: 200px;
+}
 .time {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;                          /*Edição faça parte do time*/
+  height: 100vh;                          /*Edição faça parte do time - trabalhe conosco*/
   border-radius: unset;
   margin-top: 40px;
   opacity: 0.3;
