@@ -339,7 +339,29 @@ body {
 
 }
  
-  
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;                          /*Edição faça parte do time*/
+  border-radius: unset;
+  margin-top: 40px;
+  opacity: 0.3;
+  border-radius: 20%;
+  margin-bottom: 300px;
+}
+.contatotel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 200px;  /*Edição faça parte do time*/
+  border-radius: unset;
+  margin-top: 50px;
+  opacity: 0.3;
+  border-radius: 20%;
+  max-height: 100%;
+}
 
 
 
