@@ -6,7 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <link rel="stylesheet" href="4rodassobre.css.css">
+   
     <title>Cidades</title>
+
+    <style>
+      .image {
+          display: none;
+          max-width: 900px; 
+          height: auto; 
+          text-align: center;
+          display: flex;
+          margin-top: 30px;
+      }
+  </style>
 </head>
 <body>
   
@@ -46,22 +58,51 @@
       
      
      
-    <div class="caixatexto">
-      <div class="textosobre">   
-        <h1>Sobre a 4Rodas</h1>
-        <p>Fundada em 1990 na cidade de Catanduva, a empresa 4Rodas iniciou como fornecedora de peças automotivas de alta qualidade. Com uma ampla seleção de peças originais e de reposição, a empresa rapidamente se estabeleceu como uma referência no mercado regional.</p>
     
-        <p>Ao longo dos anos, a 4rodas consolidou sua posição como líder no setor, fornecendo peças confiáveis para diversos modelos e marcas de veículos. Com uma equipe especializada e experiente, a empresa oferece consultoria técnica aos clientes, garantindo a escolha adequada das peças para suas necessidades específicas.</p>
-    
-        <p>Hoje, a 4Rodas é reconhecida por sua qualidade, variedade e atendimento ao cliente. Seja para reparos ou manutenções, os clientes confiam na empresa para obter as peças automotivas necessárias, garantindo a performance e durabilidade de seus veículos.</p>
-    
-        <p>Com um compromisso contínuo com a excelência, a 4Rodas continua a expandir seu catálogo de peças, buscando atender às demandas em constante evolução do mercado automotivo. Como uma escolha confiável para as necessidades de peças automotivas, a 4Rodas continua a ser a preferência dos clientes em Catanduva e região.</p>
-      
-      
-      </div>
-       
-              </div>
+     
 
+      
+      <form class="formulariocidades">
+        <label for="cidade">Escolha uma cidade:</label>
+        <select id="cidade" onchange="mostrarImagem()">
+            <option value="">Selecione...</option>
+            <option value="catanduva">Catanduva</option>
+            <option value="elisiario">Elisiário</option>
+            <option value="rioPreto">São José do Rio Preto</option>
+        </select>
+         <center>
+        <img id="imagemCatanduva" class="image" src="imagensp/lojacatanduva.jpg" alt="Catanduva" style="display: none;">
+        <img id="imagemElisiario" class="image" src="imagensp/lojaelisiário.jpg" alt="Elisiário"style="display: none;">
+        <img id="imagemRioPreto" class="image" src="imagensp/lojariopreto.jpg" alt="São José do Rio Preto"style="display: none;">
+        </center>
+    </form>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          // Oculta todas as imagens no carregamento da página
+          var imagens = document.getElementsByClassName("image");
+          for (var i = 0; i < imagens.length; i++) {
+              imagens[i].style.display = "none";
+          }
+      });
+
+      function mostrarImagem() {
+          var cidade = document.getElementById("cidade").value;
+          var imagens = document.getElementsByClassName("image");
+
+          for (var i = 0; i < imagens.length; i++) {
+              imagens[i].style.display = "none"; // Oculta todas as imagens
+          }
+
+          if (cidade !== "") {
+              var imagemCidade = document.getElementById("imagem" + cidade.charAt(0).toUpperCase() + cidade.slice(1));
+              imagemCidade.style.display = "block"; // Mostra a imagem correspondente à cidade selecionada
+          }
+      }
+  </script>
+      </body>
+      </html>
+      
               
              
              
@@ -91,7 +132,7 @@
                 </ul>
                 <center>
                 <ul class="menu-footer">
-                  <li class="menu__item"><a class="menu__link" href="#">Cidades</a></li>
+                  <li class="menu__item"><a class="menu__link" href="cidades.html">Cidades</a></li>
                   <li class="menu__item"><a class="menu__link" href="marcas.html">Marcas</a></li>
                   <li class="menu__item"><a class="menu__link" href="https://quatrorodas.abril.com.br/noticias/" target="_blank">Noticias</a></li>
                   <li class="menu__item"><a class="menu__link" href="trabalheconos.html" target="_blank">Trabalhe conosco</a></li>

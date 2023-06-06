@@ -186,6 +186,12 @@ body {
   width: 80%;
 }
 
+.cidades{
+grid-template-rows: auto;
+opacity: 0.9;
+}
+
+
 
 /* Inicio configurações Map*/
 
@@ -371,7 +377,20 @@ body {
   max-height: 100%;
 }
 
+.formulariocidades{
+  text-align: center;
+  width: 100%;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 400px;
+  font-size: large;
+}
 
+select {
+  width: 200px; 
+  padding: 5px; 
+  font-size: 16px; 
+}
 
 /* fim marcas*/
 
