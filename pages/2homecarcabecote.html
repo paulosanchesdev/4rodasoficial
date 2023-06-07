@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imagensp/favconroda.png.png">
     <link rel="stylesheet" href="4rodasoficial.css.css">
-    <title>4rodasoficial</title>
-    
-    </style>
-</head>
-<body>
-
-  <style>
-    /* Estilos CSS */
-    .produto-frete {
+    <title>2homecarcabecote</title>
+    <style>
+      .produto-frete {
       background-color: #f2f2f2;
       padding: 20px;
       border: 1px solid #ccc;
@@ -26,16 +21,10 @@
       width: 50%;
       background-image: url(https://i.pinimg.com/originals/6f/7c/63/6f7c63991726d61d63730682e791d78c.gif);
       opacity: 0.9;
-      color:white
-      
+      color:white;
+      max-height: 1200px;
     }
-  
-    .produto-frete img {
-      margin-bottom: 10px;
-      width: 200px;
-      margin-left: 70px;
-   
-    }
+    
   
     .produto-frete h3 {
       font-size: 18px;
@@ -112,50 +101,44 @@
       border-radius: 3px;
       cursor: pointer;
     }
-  </style>
-
-   
-     
-<div class="container">
-  <a href="4rodasoficial.html.html">
-  <img src="imagensp/4Rcortado.gif.gif" alt="Logo" class="logo"  > 
-  </a>
-    <nav class="menu">
-      <div class="menu-item">
-        <a href="4rodasoficial.html.html">Home</a>
-      </div>
-      <div class="menu-item">
-        <a href="">Produtos</a>
-        <div class="submenu">
-          <a href="">Adesivos<br></a>
-          <a href="">Anel de Encosto<br> </a>
-          <a href="">Arruela<br> </a>
-          <a href="">Bico Injetor<br> </a>
-          <a href="">Cabeçote<br></a>
-        </div>
-      </div>
-      <div class="menu-item">
-        <a href="#">Cidades</a>
-        <div class="submenu">
-          <a href="#">Catanduva<br></a>
-          <a href="#">Elisiário<br></a>
+    </style>
     
-          <a href="#">S.j Rio Preto<br> </a>
-        </div>
-      </div>
-      <div class="menu-item">
-        <a href="contato.html"target="_blank">Contato</a>
-      </div>
-      <div class="menu-item">
-        <a href="login.html" target="_blank">Login</a>
-      </div>
-    </nav>
-    <div class="search-bar">
-      <input type="text" id="searchInput" onkeyup="handleKeyPress(event)" placeholder="Digite sua pesquisa">
-      <button onclick="pesquisar()">Pesquisar</button>
-  </div>
-  </div>
+</head>
+<body>
   
+    <div class="container">
+      <a href="home.html">
+      <img src="imagensp/4Rcortado.gif.gif" alt="Logo" class="logo"  > 
+      </a>
+        <nav class="menu">
+          <div class="menu-item">
+            <a href="home.html">Home</a>
+          </div>
+          <div class="menu-item">
+            <a href="">Produtos</a>
+            <div class="submenu">
+              <a href="">Adesivos<br></a>
+              <a href="">Anel de Encosto<br> </a>
+              <a href="">Arruela<br> </a>
+              <a href="">Bico Injetor<br> </a>
+              <a href="">Cabeçote<br></a>
+            </div>
+          </div>
+          <div class="menu-item">
+            <a href="Sobre.html"target="_blank">Sobre</a>
+          </div>
+          <div class="menu-item">
+            <a href="contato1.html"target="_blank">Contato</a>
+          </div>
+          <div class="menu-item">
+            <a href="loginteste.html" target="_blank">Login</a>
+          </div>
+        </nav>
+        <div class="search-bar">
+          <input type="text" id="searchInput" onkeyup="handleKeyPress(event)" placeholder="Digite sua pesquisa">
+          <button onclick="pesquisar()">Pesquisar</button>
+      </div>
+      </div>
       
      
      
@@ -164,15 +147,18 @@
           <a href="https://api.whatsapp.com/send?phone=551735222200&text=4%20Rodas:%20Confiabilidade%20e%20Qualidade,%20o%20Padr%C3%A3o%20que%20Voc%C3%AA%20Merece"target="_blank">
             <video src="imagensp/propagandatelefone.mp4" muted loop autoplay></video>
           </a>
+          
 
             </div>
          
         
             <div class="produto-frete">
-              <img src="imagensp/poli.jpg" alt="Produto 1" width="20%" class="zoomable">
-              <h3>Polia-Livre Ponta Altenador/IVECO/NEW DAILY APOS 2008</h3>
-              <p class="price">R$ 312,85</p>
-              <p class="parcela">ou 6x de R$ 52,14</p>
+              <center>
+              <img src="imagensp/cabecotehome.jpeg" alt="Produto 1" width="60%" height="auto" class="zoomable"alt="produto-frete">
+            </center>
+              <h3>Cabeçote-hyundai HR | K2500 2.5 DCI 16v Taranto</h3>
+              <p class="price">R$ 6.903,48</p>
+              <p class="parcela">ou 6x de R$ 1.150,58</p>
           
               <form id="frete-form" onsubmit="event.preventDefault(); calcularFrete();">
                 <label for="quantity">Quantidade:</label>
@@ -218,7 +204,7 @@
                 <div id="pix" style="display: none;">
                   <label for="pix-qr-code">QR Code:</label>
                   <br>
-                  <img src="imagensp/qrcode.jpeg" alt="QR Code" width="10%">
+                  <img src="imagensp/qrcode.jpeg" alt="QR Code" width="50%"height="auto">
                 </div>
               
                 <div id="cartao-credito" style="display: none;">
@@ -254,7 +240,7 @@
               
               
                 <br>
-                <a href="boletofake.html" target="_blank"></a>
+                <a href="boleto.html" target="_blank"></a>
                 <button type="button" onclick="finalizarCompra()">Finalizar Compra</button>
               </form>
               
@@ -313,7 +299,7 @@
                   calcularFrete();
               
                   // Cálculo do valor total
-                  const price = 312.85; // Valor do produto
+                  const price = 6.903; // Valor do produto
                   const freight = 40; // Valor fixo do frete
                   const quantity = document.getElementById('quantity').value;
                   const totalValueElement = document.getElementById('total-value');
@@ -335,7 +321,7 @@
                 const totalContainer = document.getElementById('total');
           
                 // Cálculo do valor total
-                const price = 312.85; // Valor do produto
+                const price = 6903.48;
                 const freight = 40; // Valor fixo do frete
                 const totalValue = (parseFloat(price) * parseInt(quantity)) + parseFloat(freight);
           
@@ -344,11 +330,18 @@
                 totalContainer.style.display = 'block';
               }
 
-              function finalizarCompra() {
-    
-             window.location.href = "boletofake.html";
-             }
-          
+              var primeiroClique = true;
+
+function finalizarCompra() {
+if (primeiroClique) {
+window.open("loginteste.html", "popup", "width=600,height=600");
+
+} else {
+window.open("boleto.html", "_blank");
+}
+
+primeiroClique = !primeiroClique;
+}
                 
               </script>
               
@@ -358,25 +351,14 @@
           
               
             </script>
-              
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
+
               
              
+  
               <footer class="footer">
-                <nav class="nav1">
-                  <img src="imagensp/principais marcas.gif.gif"width="1300px" height="150px">
-                </nav>
+                
+                  <img src="imagensp/Principaismarcas.gif.gif"width="1300px" height="150px">
+                
                   <div class="waves">
                   <div class="wave" id="wave1"></div>
                   <div class="wave" id="wave2"></div>
@@ -387,23 +369,23 @@
                   <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com" target="_blank">
                       <ion-icon name="logo-facebook"></ion-icon>
                     </a></li>
-                  <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com" target="_blank">
                       <ion-icon name="logo-twitter"></ion-icon>
                     </a></li>
-                  <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/signup?_l=pt&trk=guest_homepage-basic_nav-header-join" target="_blank">
                       <ion-icon name="logo-linkedin"></ion-icon>
                     </a></li>
-                  <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com" target="_blank">
                       <ion-icon name="logo-instagram"></ion-icon>
                     </a></li>
                 </ul>
-                <ul class="menu">
-                  <li class="menu__item"><a class="menu__link" href="#">Sobre</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">Marcas</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">Noticias</a></li>
-                  <li class="menu__item"><a class="menu__link" href="trabalheconos.html" target="_blank">Trabalhe conosco</a></li>
-                
-            
+                <center>
+                <ul class="menu-footer">
+                  <li class="menu__item"><a class="menu__link" href="Cidades.html" target="_blank">Cidades</a></li>
+                  <li class="menu__item"><a class="menu__link" href="marcas.html" target="_blank">Marcas</a></li>
+                  <li class="menu__item"><a class="menu__link" href="https://quatrorodas.abril.com.br/noticias/" target="_blank">Noticias</a></li>
+                  <li class="menu__item"><a class="menu__link" href="trabalheconosco.html" target="_blank">Trabalhe conosco</a></li>
+          
                 </ul>
                 <center>
                   <p>&copy;2023 Paulo Sanches | Direitos Reservados</p>
@@ -415,7 +397,7 @@
               
               
 
-             
+         
               <script>
                 document.addEventListener('DOMContentLoaded', function() {
                 const zoomableImages = document.querySelectorAll('.zoomable');
@@ -428,7 +410,7 @@
                 image.style.transform = 'scale(1)';
                 isZoomed = false;
                 } else {
-                image.style.transform = 'scale(1.7)'; 
+                image.style.transform = 'scale(1.3)'; 
                 isZoomed = true;
                         }
                       });
