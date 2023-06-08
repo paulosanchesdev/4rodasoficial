@@ -64,21 +64,12 @@
      
 
       
-      <form class="formulariocidades">
-        <label for="cidade">Escolha uma cidade:</label>
-        <select id="cidade" onchange="mostrarImagem()">
-            <option value="">Selecione...</option>
-            <option value="catanduva">Catanduva</option>
-            <option value="elisiario">Elisiário</option>
-            <option value="rioPreto">São José do Rio Preto</option>
-          
-        </select>
+   
          <center>
         <img id="imagemCatanduva" class="image" src="imagensp/lojacatanduva.jpg" alt="Catanduva" style="display: none;">
         <img id="imagemElisiario" class="image" src="imagensp/lojaelisiário.jpg" alt="Elisiário"style="display: none;">
         <img id="imagemRioPreto" class="image" src="imagensp/lojariopreto.jpg" alt="São José do Rio Preto"style="display: none;">
         </center>
-    </form>
     
       
              
@@ -124,24 +115,7 @@
               <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
               
               
-              <script>
-
-
-                function mostrarImagem() {
-                    var cidade = document.getElementById("cidade").value;
-                    var imagens = document.getElementsByClassName("image");
-          
-                    for (var i = 0; i < imagens.length; i++) {
-                        imagens[i].style.display = "none"; 
-                    }
-          
-                    if (cidade !== "") {
-                        var imagemCidade = document.getElementById("imagem" + cidade.charAt(0).toUpperCase() + cidade.slice(1));
-                        imagemCidade.style.display = "block";
-                    }
-                }
-            </script>
-            
+              
              
               <script>
                 document.addEventListener('DOMContentLoaded', function() {
