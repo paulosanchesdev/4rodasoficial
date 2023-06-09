@@ -7,7 +7,7 @@ body {
 /* Inicio configurações cabeçalho */
 
 .container {
-  width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -492,9 +492,6 @@ footer {
   }
 }
 
-@media (min-width: 720px) and (max-width: 1200px) {
-
-}
 
 
 
