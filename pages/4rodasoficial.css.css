@@ -76,7 +76,7 @@ body {
 }
 
 .menu-item a:hover{
-  background-color: #F2AC57;
+  color: #F2AC57;
 }
 
 .menu-item:hover {
@@ -106,7 +106,7 @@ body {
 }
 
 .submenu a:hover {
-  background-color: #F2AC57;
+  color: #F2AC57;
 }
 
 /* Fim configurações cabeçalho */
@@ -408,7 +408,9 @@ footer {
 
 .social-icon__link:hover {
   transform: translateY(-10px);
+  color: #F2AC57;
 }
+
 
 .menu__link {
   font-size: 1.2rem;
@@ -428,6 +430,7 @@ footer {
 
 .menu__link:hover {
   opacity: 1;
+  color: #F2AC57;
 }
 
 .footer p {
